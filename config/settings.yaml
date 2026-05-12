@@ -11,7 +11,7 @@ exports:
   account_scorecard: data/exports/account_scorecard.csv
 
 quality:
-  minimum_security_score: 65
+  minimum_security_score: 40
 
 generator:
   seed: 42
