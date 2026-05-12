@@ -1,0 +1,17 @@
+paths:
+  snapshots: data/snapshots
+  exports: data/exports
+  findings_db: data/findings/cloud_audit.db
+  rules: config/rules.yaml
+  docs: docs
+
+exports:
+  findings: data/exports/findings.csv
+  risk_summary: data/exports/risk_summary.csv
+  account_scorecard: data/exports/account_scorecard.csv
+
+quality:
+  minimum_security_score: 65
+
+generator:
+  seed: 42

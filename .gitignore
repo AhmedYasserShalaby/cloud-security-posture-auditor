@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.pyc
+data/snapshots/*.json
+data/exports/*.csv
+data/findings/*.db
+docs/security_report.md
+docs/remediation_plan.md
+!data/snapshots/.gitkeep
+!data/exports/.gitkeep
+!data/findings/.gitkeep

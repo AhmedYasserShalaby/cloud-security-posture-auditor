@@ -1,0 +1,28 @@
+[project]
+name = "cloud-security-posture-auditor"
+version = "0.1.0"
+description = "Cloud security posture auditor for synthetic AWS-style snapshots."
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "plotly>=6.0",
+    "pyyaml>=6.0",
+    "streamlit>=1.57",
+]
+
+[project.scripts]
+cloud-audit = "cloud_audit.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=6.0",
+    "ruff>=0.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120

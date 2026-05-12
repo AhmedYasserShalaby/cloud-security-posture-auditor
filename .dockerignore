@@ -1,0 +1,7 @@
+.git
+.venv
+.pytest_cache
+.ruff_cache
+data/snapshots/*.json
+data/exports/*.csv
+data/findings/*.db

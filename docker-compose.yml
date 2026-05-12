@@ -1,0 +1,10 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - "8503:8501"
+    command: streamlit run app/streamlit_dashboard.py --server.address=0.0.0.0 --server.port=8501
+
+  auditor:
+    build: .
+    command: cloud-audit scan --source snapshots
